@@ -1,9 +1,12 @@
 img{
   max-width: 300px;
 }
-/*#design, #android, #ruby{
+#design, #android, #ruby{
   display: none;
-}*/
+}
+
+/*possibly 3 new ids for each background*/
+
 /*uncomment if want to put a border and unhide the radial button*/
 /*.hiddenRadioButton{
   display: none;
@@ -15,8 +18,9 @@ img{
 
 }*/
 body{
-  background: url(../img/sf.jpeg) no-repeat;
+  /*background: url(../img/sf.jpeg) no-repeat;*/
   background-size: cover;
+  background-color: black;
   color:white;
 }
 button{
