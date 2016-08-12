@@ -12,3 +12,12 @@ img{
   padding: 2px;
 
 }*/
+body{
+  background: url(../img/sf.jpeg) no-repeat;
+  background-size: cover;
+  color:white;
+}
+button{
+  margin-top: 50px;
+padding-bottom: 25px;
+}
