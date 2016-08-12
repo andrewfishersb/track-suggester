@@ -63,13 +63,13 @@ $(document).ready(function(){
       }
 
       //q6 - see if can change the background color
-      if(pictureInput==='london'){
-        $("body").css("background-color","green");
-      }else if(pictureInput==='sanfrancisco'){
-        $("body").css("background-color","pink");
-      }else if(pictureInput==='newyork'){
-        $("body").css("background-color","blue");
-      }
+      // if(pictureInput==='london'){
+      //   $("body").css("background-image","url(img/london.jpeg)");
+      // }else if(pictureInput==='sanfrancisco'){
+      //   $("body").css("background-color","pink");
+      // }else if(pictureInput==='newyork'){
+      //   $("body").css("background-color","blue");
+      // }
 
       //q7
       if(activityInput==='logical'){
@@ -78,9 +78,7 @@ $(document).ready(function(){
       }else if(activityInput ==='creative'){
         css++;
       }
-      alert("CSS: " + css);
-      alert("Java: " + android );
-      alert("Ruby: " + ruby);
+
       //q8
       var animal = Math.floor(Math.random()*4)+1;
       if(animal===1){
@@ -90,6 +88,15 @@ $(document).ready(function(){
       }else if(animal ===3){
         css++;
       }
-  
+      if(ruby>android &&ruby>css){
+        $("#ruby").show();
+      }else if(css>ruby && css>android){
+        $("#design").show();
+      }else if(android>css &&android>ruby){
+        $("#android").show();
+      }else {
+        $("#none").show();
+      }
+
     });
   });

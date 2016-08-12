@@ -15,7 +15,7 @@
         <h5>Analyzing your goals to determine which Epicodus track you should most likely continue with</h5>
       </div>
       <form id="tracker">
-        <!-- Q1 -->
+        <!-- Create -->
         <div >
           <h3>What would you like to create?</h3>
           <select class="form-control" id="work">
@@ -25,7 +25,7 @@
             <option>Webpages</option>
           </select>
         </div>
-        <!-- Q2 -->
+        <!-- Location -->
         <div >
           <h3>Where would you like to work?</h3>
           <select class="form-control" id="biztype">
@@ -35,30 +35,31 @@
             <option>A Big Business</option>
           </select>
         </div>
-        <!-- Q3 -->
-        <div id="company">
+        <!-- Company -->
+        <div id="company" class="row">
           <h3>Which Company would you rather work at?</h3>
-          <div class="radio">
+          <div class="radio col-md-4">
             <label class="box">
               <input type="radio" name="company" value="netflix">
               <img src="img/netflix.png" alt="Netflix logo" />
             </label>
           </div>
-          <div class="radio">
+          <div class="radio col-md-4">
             <label>
               <input type="radio" name="company" value="airbnb">
               <img src="img/airbnb.png" alt="Airbnb logo" />
             </label>
           </div>
-          <div class="radio">
+          <div class="radio col-md-4">
             <label >
               <input type="radio" name="company" value="media">
               <img src="img/blue2.png" alt="Blue Foundation Media logo" />
             </label>
           </div>
         </div>
-        <!-- Q4 -->
-        <div id="stack">
+      <div class="row">
+        <!-- Dev Type -->
+        <div id="stack" class="col-sm-6">
           <h3>What type of development would you prefer</h3>
           <div class="radio">
             <label>
@@ -77,37 +78,8 @@
             </label>
           </div>
         </div>
-        <!-- Q5 -->
-        <div >
-          <h3>Which of these Frameworks would you prefer</h3>
-          <select class="form-control" id="framework">
-            <option>Choose one</option>
-            <option>Bootstrap</option>
-            <option>Rails</option>
-            <option>AngularJS</option>
-          </select>
-        </div>
-
-        <!-- Q6 class="form-inline" or use a row and columns -->
-        <div id="pic" >
-          <div class="radio">
-            <label>
-              <input type="radio" name="pic" value="london"> <img src="img/london.jpeg" alt="london" />
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="pic" value="sanfrancisco"> <img src="img/sf.jpeg" alt="San Francisco" />
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="pic" value="newyork"> <img src="img/ny.jpg" alt="New York" />
-            </label>
-          </div>
-        </div>
-        <!-- Q7 -->
-        <div id="brain">
+        <!-- Activity -->
+        <div id="brain" class="col-sm-6">
           <h3>Which activity would you prefer: </h3>
           <div class="radio">
             <label>
@@ -120,31 +92,67 @@
             </label>
           </div>
         </div>
-        <!-- Q8 -->
-        <div id="animal">
-          <h3>Which of these animals do you prefer</h3>
-          <div class="radio">
+      </div>
+        <!-- framework -->
+        <div >
+          <h3>Which of these Frameworks would you prefer</h3>
+          <select class="form-control" id="framework">
+            <option>Choose one</option>
+            <option>Bootstrap</option>
+            <option>Rails</option>
+            <option>AngularJS</option>
+          </select>
+        </div>
+
+        <!-- Images class="form-inline" or use a row and columns -->
+        <div id="pic" class="row">
+          <h3>Choose an Image</h3>
+          <div class="radio col-md-4">
             <label>
-              <input type="radio" name="animal" value="panda"><img src="img/redpanda.jpg" alt="a red panda" />
+              <input type="radio" name="pic" value="london"> <img src="img/london.jpeg" alt="london" />
             </label>
           </div>
-          <div class="radio">
+          <div class="radio col-md-4">
             <label>
-              <input type="radio" name="animal" value="fox"><img src="img/fox.jpg" alt="a fennec fox"/>
+              <input type="radio" name="pic" value="sanfrancisco"> <img src="img/sf.jpeg" alt="San Francisco" />
             </label>
           </div>
-          <div class="radio">
+          <div class="radio col-md-4">
             <label>
-              <input type="radio" name="animal" value="ocelot"><img src="img/ocelot.jpg" alt="an ocelot" />
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="animal" value="monkey"><img src="img/monkey.jpg" alt="a monkey" />
+              <input type="radio" name="pic" value="newyork"> <img src="img/ny.jpg" alt="New York" />
             </label>
           </div>
         </div>
-        <!-- Q9 -->
+
+        <!-- animals -->
+        <div id="animal">
+          <h3>Which of these animals do you prefer</h3>
+          <div class="row">
+            <div class="radio col-md-6">
+              <label>
+                <input type="radio" name="animal" value="panda"><img src="img/redpanda.jpg" alt="a red panda" />
+              </label>
+            </div>
+            <div class="radio col-md-6">
+              <label>
+                <input type="radio" name="animal" value="fox"><img src="img/fox.jpg" alt="a fennec fox"/>
+              </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="radio col-md-6">
+              <label>
+                <input type="radio" name="animal" value="ocelot"><img src="img/ocelot.jpg" alt="an ocelot" />
+              </label>
+            </div>
+            <div class="radio col-md-6">
+              <label>
+                <input type="radio" name="animal" value="monkey"><img src="img/monkey.jpg" alt="a monkey" />
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Which track -->
         <div >
           <h3>Which track would you like to take?</h3>
           <select class="form-control" id="track">
@@ -166,7 +174,7 @@
         </div>
         <div id="android">
           <h3>You should take Java/Android track!</h3>
-          <img src="img/android.jpg" alt="Java logo" />
+          <img src="img/android.png" alt="Java logo" />
           <p>
             Java is a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.
           </p>
@@ -177,6 +185,11 @@
           <p>
             Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
           </p>
+        </div>
+        <div id="none">
+          <h3>Sorry results were inconclusive, looks like you have some research to do...</h3>
+          <img src="img/none.jpg" alt="All 3" />
+
         </div>
       </div>
     </div>

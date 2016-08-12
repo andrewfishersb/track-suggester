@@ -1,7 +1,8 @@
 img{
   max-width: 300px;
+  margin-bottom: 20px;
 }
-#design, #android, #ruby{
+#design, #android, #ruby, #none{
   display: none;
 }
 
@@ -18,10 +19,12 @@ img{
 
 }*/
 body{
-  /*background: url(../img/sf.jpeg) no-repeat;*/
-  background-size: cover;
-  background-color: black;
+  background: url(../img/sf.jpeg) fixed no-repeat 100%;
+  /*background-size: cover;*/
+
   color:white;
+  background-size:170%;
+
 }
 button{
   margin-top: 50px;
