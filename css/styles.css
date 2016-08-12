@@ -1,0 +1,14 @@
+img{
+  max-width: 300px;
+}
+
+/*uncomment if want to put a border and unhide the radial button*/
+/*.hiddenRadioButton{
+  display: none;
+}*/
+/*.box:hover{
+  border-style:solid;
+  border-width: thin;
+  padding: 2px;
+
+}*/
