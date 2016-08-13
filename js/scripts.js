@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("form#tracker").submit(function(event){
-      event.preventDefault();
+
       var css=0;
       var android=0;
       var ruby =0;
@@ -12,7 +12,6 @@ $(document).ready(function(){
       var pictureInput = $("input:radio[name=pic]:checked").val();
       var activityInput = $("input:radio[name=activity]:checked").val();
 
-      //q1
       if(workTypeInput==='Web Applications'){
         ruby++;
       }else if(workTypeInput ==='Phone Applications'){
@@ -21,7 +20,6 @@ $(document).ready(function(){
         css++;
       }
 
-      //q2
       if(locationTypeInput==='A Start-up'){
         ruby++;
       }else if(locationTypeInput ==='A Big Business'){
@@ -32,7 +30,6 @@ $(document).ready(function(){
       }
 
 
-      //q3
       if(companyInput==='airbnb'){
         ruby++;
       }else if(companyInput ==='netflix'){
@@ -42,7 +39,6 @@ $(document).ready(function(){
       }
 
 
-      //q4
       if(devTypeInput==='backend'){
         ruby++;
         android++;
@@ -54,24 +50,12 @@ $(document).ready(function(){
         css++;
       }
 
-
-      //q5
       if(frameworkInput==='Rails'){
         ruby++;
       }else if(frameworkInput ==='Bootstrap'){
         css++;
       }
 
-      //q6 - see if can change the background color
-      // if(pictureInput==='london'){
-      //   $("body").css("background-image","url(img/london.jpeg)");
-      // }else if(pictureInput==='sanfrancisco'){
-      //   $("body").css("background-color","pink");
-      // }else if(pictureInput==='newyork'){
-      //   $("body").css("background-color","blue");
-      // }
-
-      //q7
       if(activityInput==='logical'){
         ruby++;
         android++;
@@ -79,7 +63,6 @@ $(document).ready(function(){
         css++;
       }
 
-      //q8
       var animal = Math.floor(Math.random()*4)+1;
       if(animal===1){
         ruby++;
@@ -90,13 +73,25 @@ $(document).ready(function(){
       }
       if(ruby>android &&ruby>css){
         $("#ruby").show();
+        $("#design").hide();
+        $("#android").hide();
+        $("#none").hide();
       }else if(css>ruby && css>android){
         $("#design").show();
+        $("#ruby").hide();
+        $("#android").hide();
+        $("#none").hide();
       }else if(android>css &&android>ruby){
         $("#android").show();
+        $("#design").hide();
+        $("#ruby").hide();
+        $("#none").hide();
       }else {
         $("#none").show();
+        $("#design").hide();
+        $("#android").hide();
+        $("#ruby").hide();
       }
-
+      event.preventDefault();
     });
   });

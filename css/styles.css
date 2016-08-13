@@ -1,32 +1,43 @@
 img{
   max-width: 300px;
+
   margin-bottom: 20px;
 }
+
+
 #design, #android, #ruby, #none{
   display: none;
+  text-align: center;
+
 }
 
-/*possibly 3 new ids for each background*/
-
-/*uncomment if want to put a border and unhide the radial button*/
-/*.hiddenRadioButton{
-  display: none;
-}*/
-/*.box:hover{
-  border-style:solid;
-  border-width: thin;
-  padding: 2px;
-
-}*/
 body{
-  background: url(../img/sf.jpeg) fixed no-repeat 100%;
-  /*background-size: cover;*/
-
+  background: url("../img/sf.jpeg") fixed no-repeat ;
   color:white;
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px,
+             #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
   background-size:170%;
 
 }
+
 button{
   margin-top: 50px;
+
+}
+
+select{
+ max-width: 500px;
+ margin-bottom: 40px;
+}
+
+.submitcenter{
+  text-align: center;
   padding-bottom: 25px;
+}
+
+@media only screen and (max-width: 940px) {
+    body {
+        background: blue;
+        background-image: none;
+    }
 }

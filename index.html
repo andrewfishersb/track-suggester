@@ -15,32 +15,29 @@
         <h5>Analyzing your goals to determine which Epicodus track you should most likely continue with</h5>
       </div>
       <form id="tracker">
-        <!-- Create -->
-        <div >
-          <h3>What would you like to create?</h3>
-          <select class="form-control" id="work">
-            <option>Choose one</option>
-            <option>Web Applications</option>
-            <option>Phone Applications</option>
-            <option>Webpages</option>
-          </select>
+        <div class="row">
+          <div class="col-md-6" >
+            <h3>What would you like to create?</h3>
+            <select class="form-control" id="work">
+              <option>Web Applications</option>
+              <option>Phone Applications</option>
+              <option>Webpages</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <h3>Where would you like to work?</h3>
+            <select class="form-control" id="biztype">
+              <option>From Home (Freelance)</option>
+              <option>A Start-up</option>
+              <option>A Big Business</option>
+            </select>
+          </div>
         </div>
-        <!-- Location -->
-        <div >
-          <h3>Where would you like to work?</h3>
-          <select class="form-control" id="biztype">
-            <option>Choose one</option>
-            <option>From Home (Freelance)</option>
-            <option>A Start-up</option>
-            <option>A Big Business</option>
-          </select>
-        </div>
-        <!-- Company -->
         <div id="company" class="row">
           <h3>Which Company would you rather work at?</h3>
           <div class="radio col-md-4">
             <label class="box">
-              <input type="radio" name="company" value="netflix">
+              <input type="radio" name="company" value="netflix" checked>
               <img src="img/netflix.png" alt="Netflix logo" />
             </label>
           </div>
@@ -58,12 +55,11 @@
           </div>
         </div>
       <div class="row">
-        <!-- Dev Type -->
         <div id="stack" class="col-sm-6">
           <h3>What type of development would you prefer</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="stack" value="fullstack">
+              <input type="radio" name="stack" value="fullstack" checked>
               Full-Stack
             </label>
           </div>
@@ -78,12 +74,11 @@
             </label>
           </div>
         </div>
-        <!-- Activity -->
         <div id="brain" class="col-sm-6">
           <h3>Which activity would you prefer: </h3>
           <div class="radio">
             <label>
-              <input type="radio" name="activity" value="logical">Chess or Crossword Puzzles
+              <input type="radio" name="activity" value="logical" checked>Chess or Crossword Puzzles
             </label>
           </div>
           <div class="radio">
@@ -93,59 +88,35 @@
           </div>
         </div>
       </div>
-        <!-- framework -->
         <div >
           <h3>Which of these Frameworks would you prefer</h3>
           <select class="form-control" id="framework">
-            <option>Choose one</option>
             <option>Bootstrap</option>
             <option>Rails</option>
             <option>AngularJS</option>
           </select>
         </div>
-
-        <!-- Images class="form-inline" or use a row and columns -->
-        <div id="pic" class="row">
-          <h3>Choose an Image</h3>
-          <div class="radio col-md-4">
-            <label>
-              <input type="radio" name="pic" value="london"> <img src="img/london.jpeg" alt="london" />
-            </label>
-          </div>
-          <div class="radio col-md-4">
-            <label>
-              <input type="radio" name="pic" value="sanfrancisco"> <img src="img/sf.jpeg" alt="San Francisco" />
-            </label>
-          </div>
-          <div class="radio col-md-4">
-            <label>
-              <input type="radio" name="pic" value="newyork"> <img src="img/ny.jpg" alt="New York" />
-            </label>
-          </div>
-        </div>
-
-        <!-- animals -->
         <div id="animal">
           <h3>Which of these animals do you prefer</h3>
           <div class="row">
-            <div class="radio col-md-6">
+            <div class="radio col-xs-6">
               <label>
-                <input type="radio" name="animal" value="panda"><img src="img/redpanda.jpg" alt="a red panda" />
+                <input type="radio" name="animal" value="panda" checked><img src="img/redpanda.jpg" alt="a red panda" />
               </label>
             </div>
-            <div class="radio col-md-6">
+            <div class="radio col-sm-6">
               <label>
                 <input type="radio" name="animal" value="fox"><img src="img/fox.jpg" alt="a fennec fox"/>
               </label>
             </div>
           </div>
           <div class="row">
-            <div class="radio col-md-6">
+            <div class="radio col-sm-6">
               <label>
                 <input type="radio" name="animal" value="ocelot"><img src="img/ocelot.jpg" alt="an ocelot" />
               </label>
             </div>
-            <div class="radio col-md-6">
+            <div class="radio col-sm-6">
               <label>
                 <input type="radio" name="animal" value="monkey"><img src="img/monkey.jpg" alt="a monkey" />
               </label>
@@ -156,40 +127,54 @@
         <div >
           <h3>Which track would you like to take?</h3>
           <select class="form-control" id="track">
-            <option>Choose one</option>
             <option>Java/Android</option>
             <option>Ruby/Rails</option>
             <option>CSS/Design</option>
           </select>
         </div>
-        <button type="submit" class="btn btn-danger">Submit to see your track</button>
+        <div class="submitcenter">
+          <button type="submit" class="btn btn-danger">Submit to see your track</button>
+        </div>
+
       </form>
       <div id="answer">
-        <div id="design">
-          <h3>You should take the CSS/Design track!</h3>
-          <img src="img/css.png" alt="Css and HTML logo" />
-          <p>
-            CSS is one of the core languages of the web and is an integral part of front-end development. CSS – along with HTML and JavaScript – helps front-end developers control what the end user of a website can see and do. In a world dominated by big brands and big ideas, the need for skilled designers is greater than ever. Whether you’re an aspiring freelancer, a design-savvy front-end developer, or a budding UI/UX designer, this course is a launching point for anyone interested in designing beautiful, memorable web experiences.
-          </p>
-        </div>
-        <div id="android">
-          <h3>You should take Java/Android track!</h3>
-          <img src="img/android.png" alt="Java logo" />
-          <p>
-            Java is a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.
-          </p>
-        </div>
-        <div id="ruby">
-          <h3>You should take the Ruby/Rails track!</h3>
-          <img src="img/ruby2.png" alt="Ruby logo" />
-          <p>
-            Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
-          </p>
-        </div>
-        <div id="none">
-          <h3>Sorry results were inconclusive, looks like you have some research to do...</h3>
-          <img src="img/none.jpg" alt="All 3" />
+        <div id="design" class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <h3>You should take the CSS/Design track!</h3>
+            <img src="img/css.png" alt="Css and HTML logo" />
+            <p>
+              CSS is one of the core languages of the web and is an integral part of front-end development. CSS – along with HTML and JavaScript – helps front-end developers control what the end user of a website can see and do. In a world dominated by big brands and big ideas, the need for skilled designers is greater than ever. Whether you’re an aspiring freelancer, a design-savvy front-end developer, or a budding UI/UX designer, this course is a launching point for anyone interested in designing beautiful, memorable web experiences.
+            </p>
+          </div>
+          </div>
 
+        <div id="android" class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <h3>You should take Java/Android track!</h3>
+            <img src="img/android.png" alt="Java logo" />
+            <p>
+              Java is a favorite of enterprise companies, but its appeal is broader as well: it's one of the most popular of all programming languages, and it's used in everything from for high-performance processing to building Android user interfaces. Because Java has been very popular for a very long time and is used in so many applications, it is also a very high-demand language. If you're interested in working for an enterprise-level company, as an Android developer, or in high-performance applications, Java could be a good language to learn.
+            </p>
+          </div>
+        </div>
+        <div id="ruby" class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <h3>You should take the Ruby/Rails track!</h3>
+            <img src="img/ruby.png" alt="Ruby logo" />
+            <p>
+              Ruby is a favorite language of developers building interactive web applications. If an app involves users creating accounts, entering information, and interacting with dynamic content, there's a good chance it is built with Ruby. Ruby became popular because the Rails framework, which is written with Ruby, simplified many of the common tasks associated with building web applications. It's most popular with startups and smaller companies who are looking to build their product quickly.
+            </p>
+          </div>
+
+        </div>
+        <div id="none" class="row">
+          <div class="col-md-offset-3 col-md-6">
+            <h3>Sorry results were inconclusive, looks like you have some research to do...</h3>
+            <img src="img/none.jpg" alt="All 3" />
+            <p>
+              But don't worry the most important thing is to get the basic principles of coding down, practice a lot, and be ready to change to another language when your job inevitably does.
+            </p>
+          </div>
         </div>
       </div>
     </div>
